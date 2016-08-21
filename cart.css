@@ -30,7 +30,7 @@ table.cart thead th.t-checkbox {
 }
 
 table.cart thead th.t-goods {
-    width: 50rem;
+    width: 20rem;
 }
 
 table.cart thead th.t-checkbox .check {
@@ -38,7 +38,7 @@ table.cart thead th.t-checkbox .check {
 }
 
 table.cart thead th.t-selling-price {
-	width: 9rem;;
+	width: 9rem;
 }
 
 table.cart thead th.t-qty {

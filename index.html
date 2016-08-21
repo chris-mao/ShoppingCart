@@ -8,103 +8,100 @@
 	<script type="text/javascript" src="cart.js"></script>
 	<link href="cart.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
-
-
 </HEADER>
 <body class="container">
-			<div class="row hidden-print">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<ol class="breadcrumb">
-						<li><a href="<%=application.getContextPath()%>">首页</a></li>
-                        <li class="active">查看购物车</li>
-					</ol>
-				</div>
-			</div>
+	<div class="row hidden-print">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<ol class="breadcrumb">
+				<li><a href="<%=application.getContextPath()%>">首页</a></li>
+                <li class="active">查看购物车</li>
+			</ol>
+		</div>
+	</div>
     <div class="cart-wrap">
-				<table id="cartTable" class="cart table table-condensed">
-					<thead>
-						<tr>
-							<th class="t-checkbox"><label><input
-									class="check-all check" type="checkbox" />全选</label></th>
-							<th class="t-goods"><label>产品型号</label></th>
-							<th class="t-selling-price"><label>销售单价</label></th>
-							<th class="t-qty"><label>采购数量</label></th>
-							<th class="t-subtotal"><label>金额小计</label></th>
-							<th class="t-action"><label>操作</label></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td colspan="2" class="goods"><label> <input
-									type="checkbox" class="check-one check" /> ZB15KQ-PFJ-558
-							</label></td>
-							<td class="selling-price number small-bold-red"
+		<table id="cartTable" class="cart table table-condensed">
+			<thead>
+				<tr>
+					<th class="t-checkbox"><label><input class="check-all check" type="checkbox" />全选</label></th>
+					<th class="t-goods text-center"><label>产品型号</label></th>
+					<th class="text-center">产品备注</th>
+					<th class="t-selling-price text-center"><label>销售单价</label></th>
+					<th class="t-qty text-center"><label>采购数量</label></th>
+					<th class="t-subtotal text-center"><label>金额小计</label></th>
+					<th class="t-action"><label>操作</label></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="2" class="goods"><label> <input type="checkbox" class="check-one check" />ZB15KQ-PFJ-558</label></td>
+					<td></td>
+					<td class="selling-price number small-bold-red text-right"
 								style="padding-top: 1.1rem;" data-bind="76.55">76.55</td>
-							<td>
-								<div class="input-group input-group-sm">
-									<span class="input-group-addon minus">-</span> <input
-										type="text" class="number form-control input-sm" value="10" />
-									<span class="input-group-addon plus">+</span>
-								</div>
-							</td>
-							<td class="subtotal number small-bold-red"
-								style="padding-top: 1.1rem;"></td>
-							<td class="action" style="padding-top: 1.1rem;"><span
-								class="delete btn btn-xs btn-warning">删除</span></td>
-						</tr>
-						<tr>
-							<td colspan="2" class="goods"><label><input
+					<td>
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon minus">-</span> <input
+										type="text" class="number form-control input-sm" value="2" />
+							<span class="input-group-addon plus">+</span>
+						</div>
+					</td>
+					<td class="subtotal number small-bold-red text-right" style="padding-top: 1.1rem;"></td>
+					<td class="action" style="padding-top: 1.1rem;"><span class="delete btn btn-xs btn-warning">删除</span></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="goods"><label><input
 									type="checkbox" class="check-one check" />ZB15KQE-TFD-558</label></td>
-							<td class="selling-price number small-bold-red"
+					<td></td>
+					<td class="selling-price number small-bold-red text-right"
 								style="padding-top: 1.1rem;" data-bind="1100">1100</td>
-							<td>
-								<div class="input-group input-group-sm">
-									<span class="input-group-addon minus">-</span> <input
-										type="text" class="number form-control input-sm" value="16" />
-									<span class="input-group-addon plus">+</span>
-								</div>
-							</td>
-							<td class="subtotal number small-bold-red"
+					<td>
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon minus">-</span> <input
+										type="text" class="number form-control input-sm" value="3" />
+							<span class="input-group-addon plus">+</span>
+						</div>
+					</td>
+					<td class="subtotal number small-bold-red text-right"
 								style="padding-top: 1.1rem;"></td>
-							<td class="action" style="padding-top: 1.1rem;"><span
+					<td class="action" style="padding-top: 1.1rem;"><span
 								class="delete btn btn-xs btn-warning">删除</span></td>
-						</tr>
-						<tr>
-							<td colspan="2" class="goods"><label><input
+				</tr>
+				<tr>
+					<td colspan="2" class="goods"><label><input
 									type="checkbox" class="check-one check" />ZB21KQ-TFD-558</label></td>
-							<td class="selling-price number small-bold-red"
+					<td></td>
+					<td class="selling-price number small-bold-red text-right"
 								style="padding-top: 1.1rem;" data-bind="1200">1200</td>
-							<td>
-								<div class="input-group input-group-sm">
-									<span class="input-group-addon minus">-</span> <input
-										type="text" class="number form-control input-sm" value="12" />
-									<span class="input-group-addon plus">+</span>
-								</div>
-							</td>
-							<td class="subtotal number small-bold-red"
+					<td>
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon minus">-</span> <input
+										type="text" class="number form-control input-sm" value="6" />
+							<span class="input-group-addon plus">+</span>
+						</div>
+					</td>
+					<td class="subtotal number small-bold-red text-right"
 								style="padding-top: 1.1rem;"></td>
-							<td class="action" style="padding-top: 1.1rem;"><span
+					<td class="action" style="padding-top: 1.1rem;"><span
 								class="delete btn btn-xs btn-warning">删除</span></td>
-						</tr>
-						<tr>
-							<td colspan="2" class="goods"><label><input
+				</tr>
+				<tr>
+					<td colspan="2" class="goods"><label><input
 									type="checkbox" class="check-one check" />ZBD45KQE-TFD-558</label></td>
-							<td class="selling-price number small-bold-red"
+					<td></td>
+					<td class="selling-price number small-bold-red text-right"
 								style="padding-top: 1.1rem;" data-bind="1400">1400</td>
-							<td>
-								<div class="input-group input-group-sm">
-									<span class="input-group-addon minus">-</span> <input
-										type="text" class="number form-control input-sm" value="24" />
-									<span class="input-group-addon plus">+</span>
-								</div>
-							</td>
-							<td class="subtotal number small-bold-red"
-								style="padding-top: 1.1rem;"></td>
-							<td class="action" style="padding-top: 1.1rem;"><span
+					<td>
+						<div class="input-group input-group-sm">
+							<span class="input-group-addon minus">-</span> <input
+										type="text" class="number form-control input-sm" value="8" />
+							<span class="input-group-addon plus">+</span>
+						</div>
+					</td>
+					<td class="subtotal number small-bold-red text-right"></td>
+					<td class="action" style="padding-top: 1.1rem;"><span
 								class="delete btn btn-xs btn-warning">删除</span></td>
-						</tr>
-					</tbody>
-				</table>
+				</tr>
+			</tbody>
+		</table>
 
 		<div class="row">
 			<div class="col-md-12 col-lg-12 col-sm-12">
