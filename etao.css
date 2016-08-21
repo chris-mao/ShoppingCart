@@ -1,0 +1,10 @@
+body{padding:0;padding-top:58px;}
+
+.emerson {width:124px;height:70px;display:block;margin:10px auto;background:transparent url(../images/logo_white.jpg) no-repeat center top;}
+.copeland {width:190px;height:60px;display:block;margin-top:20px;background:transparent url(../images/copeland.JPG) no-repeat center top;}
+
+/*************************************************************************************************/
+
+.large-bold-red {color:#FF5500;font-weight: bold;font-size: 26px;}
+.small-bold-red {color:#FF5500;font-weight: bold;font-size: 18px;}
+.smaller-bold-red {color:#FF5500;font-weight: bold;font-size: 12px;}

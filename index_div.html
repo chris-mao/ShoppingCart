@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<HEADER>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<script type="text/javascript" src="jquery-1.11.min.js"></script>
+	<script type="text/javascript" src="demo.js"></script>
+	<link href="etao.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+</HEADER>
+<body class="container">
+    <div class="cart-wrap">
+        <div class="cart">
+            <div class="cart-thead">
+                <div class="column"><label><input class="check-all check" type="checkbox" />&nbsp;全选</label></div>
+                <div class="column">单价</div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="cart-tbody">
+                <div class="cart-item-list">
+                    <div class="item-list item-selected">
+                        <div class="item-form">
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+                    </div>
+                    <div class="item-list item-selected">
+                        <div class="item-form">
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="">
+                </div>
+                <div class="action"></div>
+                <div class="toolbar-right">
+                	<div class="btn-area"></div>
+                	<div class="price-total"></div>
+                	<div class="item-count"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	<table id="cartTable"  class="cart table table-condensed" >
+		<thead>
+			<tr>
+				<th style="width:60px;"><label><input class="check-all check" type="checkbox" />&nbsp;全选</label></th>
+				<th><label>产品型号</label></th>
+				<th style="width:100px;"><label>单价</label></th>
+				<th style="width:120px;"><label>数量</label></th>
+				<th style="width:100px;"><label>小计</label></th>
+				<th style="width:40px;"><label>操作</label></th>	
+			</tr>
+		</thead>
+		<tbody>
+			<tr >
+				<td ><input class="check-one check" type="checkbox" />&nbsp;</td>
+				<td class="goods">
+					<label>Item 1</label>
+				</td>
+				<td class="number small-bold-red"><span>76.55</span></td>
+				<td class="input-group">
+					<span class="input-group-addon minus">-</span>
+					<input type="text" class="number form-control input-sm" value="10" />
+					<span class="input-group-addon plus">+</span>
+				</td>
+				<td class="subtotal number small-bold-red">101</td>
+				<td class="operation"><span class="delete btn btn-xs btn-primary">删除</span></td>
+			</tr>
+			<tr>
+				<td ><input class="check-one check" type="checkbox" /></td>
+				<td class="goods">
+					<label>Item 2</label>
+				</td>
+				<td class="number small-bold-red"><span>1100</span></td>
+				<td class="input-group">
+					<span class="input-group-addon minus">-</span>
+					<input type="text" class="number form-control input-sm" value="1" />
+					<span class="input-group-addon plus">+</span>
+				</td>
+				<td class="subtotal number small-bold-red">352</td>
+				<td class="operation"><span class="delete btn btn-xs btn-primary">删除</span></td>
+			</tr>
+			<tr>
+				<td ><input class="check-one check" type="checkbox" /></td>
+				<td class="goods">
+					<label>Item 3</label>
+				</td>
+				<td class="number small-bold-red"><span>1200</span></td>
+				<td class="input-group">
+					<span class="input-group-addon minus">-</span>
+					<input type="text" class="number form-control input-sm" value="1" />
+					<span class="input-group-addon plus">+</span>
+				</td>
+				<td class="subtotal number small-bold-red">9876.55</td>
+				<td class="operation"><span class="delete btn btn-xs btn-primary">删除</span></td>
+			</tr>
+			<tr>
+				<td ><input class="check-one check" type="checkbox" /></td>
+				<td class="goods">
+					<label>Item 4</label>
+				</td>
+				<td class="number small-bold-red"><span>1400</span></td>
+				<td class="input-group">
+					<span class="input-group-addon minus">-</span>
+					<input type="text" class="number form-control input-sm" value="1" />
+					<span class="input-group-addon plus">+</span>
+				</td>
+				<td class="subtotal number small-bold-red">9876.55</td>
+				<td class="operation"><span class="delete btn btn-xs btn-primary">删除</span></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="row">
+		<div class="col-md-12 col-lg-12 col-sm-12">
+			<div style="border-top:1px solid gray;padding:4px 10px;">
+				<div style="margin-left:20px;" class="pull-right total">
+					<label>金额合计:<span class="currency">￥</span><span id="priceTotal" class="large-bold-red">0.00</span></label>
+				</div>
+				<div class="pull-right">
+					<label>您选择了<span id="itemCount" class="large-bold-red" style="margin:0 4px;"></span>种产品型号，共计<span id="qtyCount" class="large-bold-red" style="margin:0 4px;"></span>件</label>
+				</div>
+				<div class="pull-right selected" id="selected">
+					<span id="selectedTotal"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

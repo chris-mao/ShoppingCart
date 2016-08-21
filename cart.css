@@ -1,0 +1,82 @@
+body{padding:0;padding-top:58px;}
+
+.large-bold-red {color:#FF5500;font-weight: bold;font-size: 26px;}
+.small-bold-red {color:#FF5500;font-weight: bold;font-size: 18px;}
+.smaller-bold-red {color:#FF5500;font-weight: bold;font-size: 12px;}
+
+.cart-wrap {
+	line-height: 2.8rem;
+}
+
+.cart-wrap .empty {
+	height:10rem;
+	width:38rem;
+	font-size:1.6rem;
+	margin:0 auto;
+	padding-left:11rem;
+	padding-top:2.4rem;
+	line-height:2rem;
+    background: url(../images/Car.png) no-repeat 1.2rem;
+}
+
+table.cart {
+    font-size: 1.4rem;
+	min-height: 10rem;
+	padding-top: 1rem;
+}
+
+table.cart thead th.t-checkbox {
+	width: 5rem;
+}
+
+table.cart thead th.t-goods {
+    width: 50rem;
+}
+
+table.cart thead th.t-checkbox .check {
+	margin-right: 0.2rem
+}
+
+table.cart thead th.t-selling-price {
+	width: 9rem;;
+}
+
+table.cart thead th.t-qty {
+	width: 9.5rem;
+}
+
+table.cart thead th.t-subtotal {
+	width: 12rem;
+}
+
+table.cart thead th.t-action {
+	width: 4rem;
+}
+
+table.cart tbody .goods {
+	padding-top: 1.1rem;
+}
+
+table.cart tbody .goods label {
+	margin-left: 0.3rem;
+}
+
+table.cart tbody .goods input {
+	margin-right: 0.6rem;
+}
+
+table.cart tbody .selling-price:before, table.cart tbody .subtotal:before,
+	table.cart tbody .price-total:before {
+	content: "￥"
+}
+
+table.cart tbody .selling-price:after, table.cart tbody .subtotal:after
+	{
+	content: "";
+	padding-left: 1.1rem;
+}
+
+.cart-summary {
+	border-top: 0.1rem solid #e9e9e9;
+	padding: 0.6rem 1rem;
+}
